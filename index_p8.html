@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a0b2e">
+  <meta name="description" content="Amit Mathur — BCA student and aspiring software developer exploring web development, Salesforce and MuleSoft.">
+
+  <title>Amit Mathur | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Preahvihear&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style_p8.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            portfolio: {
+              bg: "#0a0810",
+              panel: "#12101a",
+              purple: "#9857d3",
+              lilac: "#c9a6ff"
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header class="header fixed left-0 top-0 z-50 w-full">
+    
+    <div class="mx-auto flex h-[72px] w-[92%] max-w-[1210px] items-center justify-between md:h-[62px] md:px-5 lg:px-8 xl:px-[75px]">
+      <a href="#home" class="" aria-label="Home">
+        <img src="Images/About/PPT_L.png" class="logo h-[42px] w-[46px]" alt="">
+      </a>
+
+      <nav class="nav hidden gap-5 md:flex lg:gap-10" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="menuOpen" type="button" class="flex h-10 w-10 flex-col items-center justify-center gap-[5px] rounded-lg border border-[#9857d3]/60 bg-white/5 md:hidden" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        <span class="h-0.5 w-5 rounded bg-white"></span>
+        <span class="h-0.5 w-5 rounded bg-white"></span>
+        <span class="h-0.5 w-5 rounded bg-white"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="menuOverlay" class="fixed inset-0 z-[60] hidden bg-black/60 md:hidden"></div>
+
+  <aside id="mobileMenu" class="mobile-menu fixed left-0 top-0 z-[70] h-full w-full max-w-sm -translate-x-full transition-transform duration-300 md:hidden" aria-label="Mobile menu">
+    <div class="flex items-center justify-between px-5 py-5">
+      <h3 class="text-3xl font-bold text-[#eeeaf2]">Menus</h3>
+      <button id="menuClose" type="button" class="flex h-10 w-10 items-center justify-center rounded-lg border border-white/20 text-2xl text-white" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mt-3 px-3 text-xl font-semibold tracking-wide">
+      <li><a href="#home" class="menu-link block rounded-md border-l-4 border-transparent px-4 py-3 text-[#c8c2d2] hover:border-[#9857d3] hover:bg-white/10 hover:text-white">HOME</a></li>
+      <li><a href="#about" class="menu-link block rounded-md border-l-4 border-transparent px-4 py-3 text-[#c8c2d2] hover:border-[#9857d3] hover:bg-white/10 hover:text-white">ABOUT</a></li>
+      <li><a href="#education" class="menu-link block rounded-md border-l-4 border-transparent px-4 py-3 text-[#c8c2d2] hover:border-[#9857d3] hover:bg-white/10 hover:text-white">EDUCATION</a></li>
+      <li><a href="#skills" class="menu-link block rounded-md border-l-4 border-transparent px-4 py-3 text-[#c8c2d2] hover:border-[#9857d3] hover:bg-white/10 hover:text-white">SKILLS</a></li>
+      <li><a href="#projects" class="menu-link block rounded-md border-l-4 border-transparent px-4 py-3 text-[#c8c2d2] hover:border-[#9857d3] hover:bg-white/10 hover:text-white">PROJECTS</a></li>
+      <li><a href="#contact" class="menu-link block rounded-md border-l-4 border-transparent px-4 py-3 text-[#c8c2d2] hover:border-[#9857d3] hover:bg-white/10 hover:text-white">CONTACT</a></li>
+    </ul>
+  </aside>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="resume-hero relative mx-auto flex min-h-screen w-[92%] max-w-[1320px] items-center pb-8 pt-[72px] lg:pb-8" aria-label="Introduction">
+      <div class="grid w-full grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,.92fr)_minmax(420px,1.08fr)] lg:gap-14 xl:gap-24">
+
+        <!-- left column -->
+        <div class="max-w-[760px] mt-[36px] lg:max-w-[650px]">
+         
+          <div class="resume-header mb-4 flex items-center gap-3">
+            <span class="resume-header_line h-[42px] w-[42px] shrink-0"></span>
+            <span class="ms-3">Software Development · Salesforce · MuleSoft</span>
+          </div>
+
+          <h1 class="resume-name text-5xl font-bold sm:text-6xl">
+            Amit <span>Mathur</span>
+          </h1>
+
+          <p class="resume-role mt-5 text-[20px] md:text-[24px] xl:text-[28px]">
+            BCA Student <span>·</span> Aspiring Software Developer
+          </p>
+
+          <p class="resume-intro mt-[18px] max-w-[570px] text-[14px] sm:text-[15px]">
+            I’m building strong foundations in software development,
+            front-end engineering and structured problem-solving while
+            exploring Salesforce and MuleSoft.
+          </p>
+
+          <div class="resume-meta mt-[32px] grid max-w-[630px] grid-cols-1 sm:grid-cols-3">
+            <div class="resume-meta__item">
+              <span>Currently</span>
+              <strong>BCA · 3rd Semester</strong>
+            </div>
+            <div class="resume-meta__item">
+              <span>Based in</span>
+              <strong>Ajmer, Rajasthan</strong>
+            </div>
+            <div class="resume-meta__item">
+              <span>Focus</span>
+              <strong>Web · CRM · APIs</strong>
+            </div>
+          </div>
+
+          <div class="mt-[20px] flex flex-wrap gap-3">
+            <a href="#projects" class="resume-btn resume-btn--primary inline-flex min-h-[45px] flex-1 items-center justify-center gap-3 px-[21px] text-[11px] font-semibold tracking-[.08em] uppercase sm:flex-none">
+              View Projects <span>↗</span>
+            </a>
+            <a href="#contact" class="resume-btn resume-btn--ghost inline-flex min-h-[45px] flex-1 items-center justify-center gap-3 px-[21px] text-[11px] font-semibold tracking-[.08em] uppercase sm:flex-none">
+              Contact Me
+            </a>
+          </div>
+
+          <div class="resume-social mt-[22px] ms-1 flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+            <a href="https://linkedin.com/in/thisisamitt" target="_blank" rel="noopener">LinkedIn</a>
+            <span></span>
+            <a href="#skills">Skills</a>
+            <span></span>
+            <a href="#education">Education</a>
+          </div>
+        </div>
+
+        <!-- right column -->
+        <div class="relative grid min-h-[390px] place-items-center overflow-hidden sm:min-h-[480px] md:min-h-[520px] lg:min-h-[570px] lg:overflow-visible">
+          <div class="resume-frame relative z-[2] aspect-[4/4.45] w-[84%] max-w-[410px] p-2 sm:w-[68%]">
+
+            <div class="resume-frame_portrait relative mx-auto mb-[5px] mt-8 w-[62%] max-w-[460px] overflow-hidden">
+              <img src="Images/Landing/k2.jpg" alt="Amit Mathur">
+              <div class="resume-frame__shade absolute inset-0"></div>
+            </div>
+
+            <div class="resume-frame__bottom mt-8 pt-8  flex h-[34px] items-center justify-between px-[7px]">
+              <span>FRONT-END</span>
+              <span>SALESFORCE</span>
+              <span>Speaking</span>
+            </div>
+          </div>
+
+          <div class="resume-orbit resume-orbit--one h-[440px] w-[440px] md:h-[560px] md:w-[560px]"></div>
+          <div class="resume-orbit resume-orbit--two h-[540px] w-[540px] md:h-[690px] md:w-[690px]"></div>
+          <span class="resume-dot resume-dot--one"></span>
+          <span class="resume-dot resume-dot--two"></span>
+        </div>
+      </div>
+
+      <div class="resume-scroll absolute bottom-5 left-1/2 hidden -translate-x-1/2 items-center gap-[10px] md:flex">
+        <span></span>
+        Scroll to explore
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section relative mx-auto flex min-h-screen w-[92%] max-w-[1210px] flex-col justify-center pb-16 pt-[104px]">
+      <div class="about-modern reveal grid grid-cols-1 items-stretch gap-10 lg:grid-cols-[minmax(0,.82fr)_minmax(0,1.18fr)] lg:gap-12 xl:gap-20">
+        
+        <div class="about-modern__intro flex min-w-0 flex-col justify-center lg:pl-1">
+          <span class="about-modern_kicker">ABOUT ME</span>  
+
+          <h1 class="section-title mt-5 p-0 text-left text-[44px] leading-[0.95] tracking-[-0.02em] md:text-[42px] lg:text-[50px] xl:text-[68px]"><span class="">Get to<br class="hidden sm:block">know me.</span></h1>
+        
+          <p class="mt-7 max-w-xl text-sm text-[#8e8996]">
+            A BCA student and aspiring software developer focused on
+            front-end development, software fundamentals and practical
+            technology.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span class="about-modern_tag">BCA Student</span>
+            <span class="about-modern_tag">Software Development</span>
+            <span class="about-modern_tag">Android Development</span>
+            <span class="about-modern_tag">Web Development</span>
+          </div>
+
+          <a href="IMAGE/ABOUT/AmitMathur(C.V).pdf" download>
+            <button class="resume-btn rounded-pill mt-5 resume-btn--primary inline-flex min-h-[45px] flex-1 items-center justify-center px-4 mt-4 text-[11px] font-semibold tracking-[.08em] uppercase transition-300 sm:flex-none"> 
+              Download Resume
+            </button> 
+          </a>
+        </div>
+
+        <div class="about-modern__panel relative flex min-w-0 flex-col overflow-hidden rounded-[14px] p-[22px] sm:rounded-[18px] md:p-8">
+          <div class="about-modern__panel-top relative z-[1] flex flex-col items-start gap-4 pb-[18px] sm:flex-row sm:items-center sm:justify-between">
+            <span>PROFILE</span>
+            <span>AJMER · INDIA</span>
+          </div>
+
+          <div class="about-modern__statement relative z-[1] grid grid-cols-1 items-start gap-[18px] sm:grid-cols-[auto_minmax(0,1fr)] sm:gap-6 md:py-10 lg:py-12">
+            <!-- <span class="about-modern__mark text-[44px] sm:text-[60px] lg:text-[72px]">AM</span> -->
+
+            <div>
+              <h3 class="text-[20px] md:text-[22px] lg:text-[28px]">I'm a BCA Student &amp; Aspiring Software Developer</h3>
+
+              <h4 class="mt-3 text-[14px] md:text-[15px] lg:text-[16px]">
+                Currently, I'm pursuing BCA at
+                <a href="https://starinfotechcollege.com/" target="_blank" rel="noopener">Star Infotech College</a>, Ajmer.
+              </h4>
+
+              <p>
+                I'm building my skills in software development, front-end
+                engineering and problem-solving, while exploring Salesforce
+                and Web Development. I enjoy turning ideas into practical digital
+                experiences and continuously learning new technologies.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-modern__panel-bottom relative z-[1] flex flex-col items-start gap-4 pt-4 sm:flex-row sm:items-center sm:justify-between">
+            <span>CURRENT FOCUS</span>
+            <strong>SOFTWARE DEVELOPMENT · SALESFORCE · WEB DEVELOPMENT </strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education-section relative mx-auto flex min-h-screen w-[92%] max-w-[1210px] flex-col justify-center overflow-hidden pb-16 pt-[104px]">
+      
+      <div class="education-modern-head mb-6 flex flex-col items-start gap-4 pb-6 md:mb-[18px] md:flex-row md:items-end md:justify-between md:gap-12">
+        
+         <div>
+          <span class="skills-modern-kicker">Learning Journey</span>
+          <h2 class="section-title m-0 p-0 text-left text-[36px] tracking-[-0.03em] md:text-[42px] lg:text-[50px] xl:text-[68px]">Education</h2>
+        </div>
+        <p class="max-w-[600px] md:max-w-[470px]">
+          My academic journey is focused on building strong foundations
+          in computer science, software development and practical technology skills.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <article class="education-card reveal flex flex-col p-[22px] sm:min-h-[390px] sm:p-[25px] sm:last:col-span-2 lg:last:col-span-1">
+          <div class="education-card__top">
+            <span class="education-card__number">01</span>
+            <span class="education-card__label">Current</span>
+          </div>
+
+          <div class="education-card__icon">🎓</div>
+
+          <div class="education-card__body">
+            <h3>BCA Student</h3>
+            <span class="education-card__school">Star Infotech College, Ajmer</span>
+            <p>
+              Currently pursuing BCA, building a strong foundation in
+              software development, computer science and problem-solving.
+            </p>
+          </div>
+
+          <div class="education-card__footer">
+            <span>UNDERGRADUATE</span>
+            <strong>BCA</strong>
+          </div>
+        </article>
+
+        <article class="education-card reveal delay-[120ms] flex flex-col p-[22px] sm:min-h-[390px] sm:p-[25px] sm:last:col-span-2 lg:last:col-span-1">
+          <div class="education-card__top">
+            <span class="education-card__number">02</span>
+            <span class="education-card__label">School</span>
+          </div>
+
+          <div class="education-card__icon">💻</div>
+
+          <div class="education-card__body">
+            <h3>Senior Secondary School</h3>
+            <span class="education-card__school">Raceme Public School, Jaipur</span>
+            <p>
+              Completed senior secondary education while developing
+              academic fundamentals and an early interest in technology.
+            </p>
+          </div>
+
+          <div class="education-card__footer">
+            <span>SENIOR SECONDARY</span>
+            <strong>RBSE</strong>
+          </div>
+        </article>
+
+        <article class="education-card reveal delay-[240ms] flex flex-col p-[22px] sm:min-h-[390px] sm:p-[25px] sm:last:col-span-2 lg:last:col-span-1">
+          <div class="education-card__top">
+            <span class="education-card__number">03</span>
+            <span class="education-card__label">School</span>
+          </div>
+
+          <div class="education-card__icon">☁️</div>
+
+          <div class="education-card__body">
+            <h3>Higher Secondary School</h3>
+            <span class="education-card__school">Mother Terisa School, Jaipur</span>
+            <p>
+              Completed school education with a focus on building
+              the academic base that led toward computer applications.
+            </p>
+          </div>
+
+          <div class="education-card__footer">
+            <span>SECONDARY EDUCATION</span>
+            <strong>RBSE</strong>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section relative mx-auto flex min-h-screen w-[92%] max-w-[1210px] flex-col justify-center overflow-hidden pb-16 pt-[104px]">
+
+      <div class="skills-modern-head mb-6 flex flex-col items-start gap-4 pb-6 md:mb-[18px] md:flex-row md:items-end md:justify-between md:gap-12">
+        <div>
+          <span class="skills-modern-kicker">TECHNICAL SKILLS</span>
+          <h2 class="section-title m-0 p-0 text-left text-[44px] tracking-[-0.03em] md:text-[42px] lg:text-[50px] xl:text-[68px]">Skills</h2>
+        </div>
+        <p class="max-w-[600px] md:max-w-[470px]">
+          A practical toolkit built around front-end development,
+          software fundamentals and the platforms I’m currently exploring.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <article class="skill-group reveal p-[22px] sm:min-h-[330px] sm:p-[25px] sm:last:col-span-2 lg:last:col-span-1">
+          <div class="skill-group__top">
+            <span class="skill-group__number">01</span>
+            <span class="skill-group__label">Frontend</span>
+          </div>
+
+          <h3>Frontend Development</h3>
+          <p class="skill-group__desc sm:min-h-[67px]">
+            Building responsive interfaces with clean structure,
+            reusable components and modern styling.
+          </p>
+
+          <div class="skill-list mt-[22px] flex flex-wrap gap-2">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Tailwind CSS</span>
+            <span>Bootstrap</span>
+            <span>DaisyUI</span>
+            <span>Figma</span>
+          </div>
+        </article>
+
+        <article class="skill-group reveal delay-[120ms] p-[22px] sm:min-h-[330px] sm:p-[25px] sm:last:col-span-2 lg:last:col-span-1">
+          <div class="skill-group__top">
+            <span class="skill-group__number">02</span>
+            <span class="skill-group__label">Backend</span>
+          </div>
+
+          <h3>Backend &amp; Data</h3>
+          <p class="skill-group__desc sm:min-h-[67px]">
+            Developing programming fundamentals and working with
+            databases and server-side concepts.
+          </p>
+
+          <div class="skill-list mt-[22px] flex flex-wrap gap-2">
+            <span>C</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>MySQL</span>
+            <span>Android</span>
+            <span>Linux</span>
+          </div>
+        </article>
+
+        <article class="skill-group reveal delay-[240ms] p-[22px] sm:min-h-[330px] sm:p-[25px] sm:last:col-span-2 lg:last:col-span-1">
+          <div class="skill-group__top">
+            <span class="skill-group__number">03</span>
+            <span class="skill-group__label">Tools</span>
+          </div>
+
+          <h3>Tools &amp; Platforms</h3>
+          <p class="skill-group__desc sm:min-h-[67px]">
+            Using development and design tools.
+          </p>
+
+          <div class="skill-list mt-[22px] flex flex-wrap gap-2">
+           <span>GitHub</span>
+            <span>VS Code</span>
+            <span>MS Office</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="skills-modern-footer reveal delay-[300ms] mt-4 flex flex-col items-start gap-2 px-[22px] py-[18px] sm:flex-row sm:items-center sm:justify-between sm:gap-5">
+        <span>Currently learning</span>
+        <strong>PHP · AI · Python</strong>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section relative mx-auto flex min-h-screen w-[92%] max-w-[1210px] flex-col justify-center pb-16 pt-[104px]">
+      
+      <div class="skills-modern-head mb-6 flex flex-col items-start gap-4 pb-6 md:mb-[38px] md:flex-row md:items-end md:justify-between md:gap-12">
+
+        <div>
+          <span class="skills-modern-kicker">TECHNICAL Projects</span>
+          <h2 class="section-title m-0 p-0 text-left text-[44px] tracking-[-0.03em] md:text-[42px] lg:text-[50px] xl:text-[68px]">Projects</h2>
+        </div>
+        <p class="max-w-[600px] md:max-w-[470px]">
+          The Projects built around my academic learning and practical exploration of front-end development, software fundamentals and modern workflows.
+        </p>
+      </div>
+
+      <!-- Netflix UI -->
+      <article class="reveal grid grid-cols-1 items-center gap-5 md:grid-cols-2 md:gap-12">
+        <div class="flex flex-col gap-2">
+          <span class="label">Featured Project</span>
+          <h3 class="project-title">Netflix UI</h3>
+          <div class="glass my-[10px] mb-[6px] p-5 text-[15px] md:px-[26px] md:py-[22px] md:text-[18px]">
+            <p>A responsive Netflix-inspired interface built to practice modern frontend development, responsive layouts, and clean UI design.</p>
+            <p>Tech: HTML • CSS • Tailwind CSS</p>
+          </div>
+          <div class="links flex gap-4">
+            <a href="#" aria-label="Source">&lt;/&gt;</a>
+            <a href="NETFLEX/index.html" aria-label="Live">↗</a></div>
+        </div>
+        <div class="shot"><img src="Images/Projects/img2.png" alt="Netflix UI project screenshot"></div>
+      </article>
+
+      <!-- Amazon UI -->
+      <article class="reveal delay-[180ms] mt-10 grid grid-cols-1 items-center gap-5 md:mt-4 md:grid-cols-2 md:gap-12">
+        <div class="shot order-2 md:order-1"><img src="Images/Projects/img.png" alt="Amazon UI project screenshot"></div>
+        <div class="order-1 flex flex-col gap-2 md:order-2 md:items-end md:text-right">
+          <span class="label">Featured Project</span>
+          <h3 class="project-title">Amazon UI</h3>
+          <div class="glass my-[10px] mb-[6px] p-5 text-[15px] md:px-[26px] md:py-[22px] md:text-[18px]">
+            <p>A frontend recreation of an e-commerce interface focused on responsive layouts, reusable UI sections, and practical frontend development.</p>
+            <p>Tech: HTML • CSS • Tailwind CSS • Bootstrap</p>
+          </div>
+          <div class="links flex gap-4"><a href="#" aria-label="Source">&lt;/&gt;</a><a href="#" aria-label="Live">↗</a></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact reveal relative mx-auto flex min-h-screen w-[92%] max-w-[1210px] flex-col justify-center pb-16 pt-[104px]">
+
+      <div class="skills-modern-head mb-6 flex flex-col items-start gap-4 pb-6 md:mb-[38px] md:flex-row md:items-end md:justify-between md:gap-12">
+        <div>
+          <span class="skills-modern-kicker">Get in Touch</span>
+          <h2 class="section-title m-0 p-0 text-left text-[44px] tracking-[-0.03em] md:text-[42px] lg:text-[50px] xl:text-[68px]">Contact</h2>
+        </div>
+        <!-- <p class="max-w-[600px] md:max-w-[470px]">
+          The Projects built around my academic learning and practical exploration of front-end development, software fundamentals and modern workflows.
+        </p> -->
+      </div>
+
+      <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-[70px]">
+
+        <!-- left -->
+        <div class="contact-form-box p-6 sm:p-[35px]">
+          
+          <form class="contact-form" action="https://formspree.io/f/mvgrpvpk" onsubmit="alert('Message Sent!');" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Address</label>
+              <textarea id="address" name="address" placeholder="Enter your address" rows="3" autocomplete="street-address" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Contact Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" autocomplete="tel" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+
+        <!-- right -->
+        <div class="contact-info px-[10px] py-5 text-center md:text-left">
+          <h3 class="text-[30px] md:text-[38px]">Let’s connect and build something meaningful</h3>
+          <p>I’m a BCA student and aspiring software developer, interested in web development, Salesforce, and MuleSoft. I’m open to internships, collaborations, projects, and technology-related opportunities.</p>
+          <a class="mail" href="mailto:amitmathur1914@gmail.com">amitmathur1914@gmail.com</a>
+          
+          <!-- icons -->
+          <div class="social flex justify-center gap-[14px] md:justify-start">
+            <a href="https://www.linkedin.com/in/thisisamitt/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2F1J95X%2BzRTW8CKH1rJb%2Bkw%3D%3D" aria-label="LinkedIn">
+              <img src="Images/Contact/link.png" style="border-radius: 50%;" alt="LinkedIn icon">
+            </a>
+            <a href="" aria-label="GitHub">
+              <img src="Images/Contact/github.png" style="border-radius: 50%; background: white;" alt="GitHub icon">
+            </a>
+            <!-- <a href="#" aria-label="Instagram">
+              <img src="Images/Contact/instagram.png" style="border-radius: 50%;" alt="Instagram icon">
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">2026 Amit Mathur. All rights reserved.</footer>
+
+  <script>
+    // mobile menu (hamburger)
+    var menu = document.getElementById('mobileMenu');
+    var overlay = document.getElementById('menuOverlay');
+    var openBtn = document.getElementById('menuOpen');
+    var closeBtn = document.getElementById('menuClose');
+
+    function setMenu(open) {
+      menu.classList.toggle('-translate-x-full', !open);
+      overlay.classList.toggle('hidden', !open);
+      openBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+
+    openBtn.addEventListener('click', function () { setMenu(true); });
+    closeBtn.addEventListener('click', function () { setMenu(false); });
+    overlay.addEventListener('click', function () { setMenu(false); });
+
+    document.querySelectorAll('.menu-link').forEach(function (link) {
+      link.addEventListener('click', function () { setMenu(false); });
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { setMenu(false); }
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 768) { setMenu(false); }
+    });
+
+    // reveal on scroll
+    var items = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      items.forEach(function (item) { observer.observe(item); });
+    } else {
+      items.forEach(function (item) { item.classList.add('show'); });
+    }
+  </script>
+</body>
+</html>

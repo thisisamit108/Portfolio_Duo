@@ -1,0 +1,110 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    box-sizing: border-box;
+    font-family: 'times new roman', sans-serif;
+}
+/* Container setup */
+.main
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Custom red button */
+.btn-red {
+  background-color: rgb(214, 24, 24);
+  padding: 10px 20px;
+  font-weight: 600;
+  color: white;
+  transition: background 0.3s ease;
+}
+.btn-red:hover {
+  background-color: #a70000;
+}
+
+/* Optional: Banner font fallback */
+.banner {
+  font-family: 'Georgia', serif;
+}
+
+
+
+/* <hr/> tag */
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+/* questions */
+
+.ques h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.ques {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.ques_box:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.ques_box svg {
+    filter: invert(1);
+}
+
+.ques_box {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+    
+    .banner> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .banner> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .banner> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .banner-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+}
+

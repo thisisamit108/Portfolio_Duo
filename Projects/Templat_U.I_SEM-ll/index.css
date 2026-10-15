@@ -1,0 +1,277 @@
+
+*
+{
+    padding: 0;
+   margin:0;
+}
+
+body 
+{
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+}
+   
+/*navbar  */
+.navbar
+{
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+/* intro */
+.intro 
+{
+    background-color: #fce4ec;
+    background-image: url(./IMAGE/home.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.intro .container 
+{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center ;
+}
+
+.intro div 
+{
+    padding-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+
+.intro div h1 
+{
+    font-size: 54px;
+    color: #808080;
+}
+
+#intro_p 
+{
+    color: rgb(255, 125, 147);
+}
+
+.intro_p 
+{
+    text-align: justify;
+}
+
+#intro button a:hover
+{
+    background-color:white;
+    color:black;
+    box-shadow: 0 0 5px rgba(164, 160, 161, 0.615);
+    transform: scale(1.05);
+}
+
+
+/* about */
+
+#about h1 span 
+{
+  color: #ff3e6c;
+}
+
+#about button
+{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+
+}
+
+#about button:hover
+{
+    background-color:white;
+    color:black;
+    box-shadow: 0 0 5px rgba(164, 160, 161, 0.615);
+    transform: scale(1.05);
+}
+
+
+/* features */
+
+.features h5 
+{
+  color: #333;
+  font-weight: bold;
+}
+
+.features p 
+{
+  color: #666;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+
+.features
+{
+    background-color: #fce4ec;
+    padding: 2rem 0;
+}
+  
+.features-grid
+{
+    margin: 2rem auto;
+    gap: 2px;
+    justify-content: center;
+    display: flex;
+}
+
+.features-cards
+{
+    background-color: #f8f9fa;
+    width: 298px;
+    border-radius: 10px;
+       
+}
+
+/* product */
+
+.products 
+{
+    background-color: #efeeef;
+    padding: 2rem 0;
+    min-height: 100vh;
+}
+
+.products-grid 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-card 
+{
+    width: 280px;
+}
+
+.products-card img 
+{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.products-card img:hover 
+{
+    transform: scale(1.05);
+}
+
+.price-tag 
+{
+    color: #444;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.price-btn:hover 
+{
+    box-shadow: 0 0 5px rgb(224, 149, 165);
+    background-color: #ffffffee;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* testimonials */
+
+.testimonials
+{
+    background-color: #d5cccfbd;
+    padding: 1rem 0;
+    min-height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items:center;
+}
+
+.testimonials-section
+{
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials span
+{
+    color: #ff3e6c;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.testimonials h5
+{
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 0.8px;
+}
+
+.testimonials p
+{
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.testimonials .card 
+{
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.testimonials .card:hover 
+{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* contact */
+
+#contact 
+{
+    background-color: #fce4ec;
+    padding: 2rem 0;
+    min-height: 100vh;
+}
+
+
+/* footer */
+footer
+{
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    border: #333 1px solid;
+    width: 50%;
+    margin: 9px auto;
+    border-radius: 10px;
+}
+
+footer p 
+{
+    color: #333;
+    font-size: 16px;
+    align-items: center;
+    padding-top: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.8px;   
+    display: flex;
+    justify-content: center;
+}
