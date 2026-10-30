@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a0b2e">
+  <title>All Certifications | Amit Mathur</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Preahvihear&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header class="header fixed left-0 top-0 z-50 w-full">
+    <div class="mx-auto flex h-[72px] w-[92%] max-w-[1210px] items-center justify-between md:h-[62px] md:px-5 lg:px-8 xl:px-[75px]">
+      <a href="index_p1.html" aria-label="Home">
+        <img src="Images/About/PPT_L.png" class="logo h-[42px] w-[46px]" alt="">
+      </a>
+
+      <nav class="nav hidden gap-10 lg:flex" aria-label="Primary">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#certifications">Certifications</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <a href="index.html#certifications" class="page-back">← Back to portfolio</a>
+    </div>
+  </header>
+
+  <main class="mx-auto w-[92%] max-w-[1210px] pb-16 pt-[110px]">
+
+    <!-- top -->
+    <div class="skills-modern-head mb-6 flex flex-col items-start gap-4 pb-6 md:flex-row md:items-end md:justify-between md:gap-12">
+      <div>
+        <span class="skills-modern-kicker">CREDENTIALS</span>
+        <h2 class="section-title m-0 p-0 text-left text-[44px] tracking-[-0.03em] md:text-[50px] xl:text-[68px]">All Certifications</h2>
+      </div>
+      <p class="max-w-[500px] md:max-w-[370px]">Every certification and credential I have earned so far, in one place.</p>
+    </div>
+
+    filters
+    <div class="mb-6 flex flex-wrap items-center gap-2" id="filters">
+      <button type="button" class="filter-chip" data-filter="all">All</button>
+      <button type="button" class="filter-chip" data-filter="copado">Copado</button>
+      <button type="button" class="filter-chip" data-filter="be10x">be10X</button>
+      <span class="page-count ml-auto" id="count"></span>
+    </div>
+
+    <!-- cards -->
+    <div class="reveal grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3" id="grid">
+        <article data-cat="copado" class="cert-card flex flex-col p-[22px] sm:p-[25px]">
+          <div class="cert-card__top flex items-center justify-between">
+            <span class="cert-card__number">01</span>
+            <span class="cert-card__status"><i></i>Verified</span>
+          </div>
+
+          <div class="cert-card__badge">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+
+          <div class="cert-card__body flex-1">
+            <span class="cert-card__issuer">Copado</span>
+            <h3>Copado Fundamentals I SFP</h3>
+            <p>Understand Salesforce DevOps fundamentals, including version control, user stories, and deployment management.</p>
+            <div class="cert-card__tags mt-4 flex flex-wrap gap-2">
+              <span>Fundamentals</span><span>SF DevOps</span><span>Version Control</span>
+            </div>
+          </div>
+
+          <dl class="cert-card__meta mt-[22px] grid grid-cols-2 gap-4">
+            <div><dt>Issued</dt><dd>2026</dd></div>
+            <div><dt>Credential ID</dt><dd>079154</dd></div>
+          </dl>
+
+          <a href="#" class="cert-card__link" target="_blank" rel="noopener">View credential <span>↗</span></a>
+        </article>
+
+        <article data-cat="copado" class="cert-card flex flex-col p-[22px] sm:p-[25px]">
+          <div class="cert-card__top flex items-center justify-between">
+            <span class="cert-card__number">02</span>
+            <span class="cert-card__status"><i></i>Verified</span>
+          </div>
+
+          <div class="cert-card__badge">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+
+          <div class="cert-card__body flex-1">
+            <span class="cert-card__issuer">Copado</span>
+            <h3>Copado Robotic Testing</h3>
+            <p>Learn automated testing workflows to validate Salesforce applications and improve release quality.</p>
+            <div class="cert-card__tags mt-4 flex flex-wrap gap-2">
+              <span>Robotic Testing</span><span>Test Automation</span><span>CI/CD</span>
+            </div>
+          </div>
+
+          <dl class="cert-card__meta mt-[22px] grid grid-cols-2 gap-4">
+            <div><dt>Issued</dt><dd>2026</dd></div>
+            <div><dt>Credential ID</dt><dd>076559</dd></div>
+          </dl>
+
+          <a href="#" class="cert-card__link" target="_blank" rel="noopener">View credential <span>↗</span></a>
+        </article>
+
+        <article data-cat="copado" class="cert-card flex flex-col p-[22px] sm:p-[25px]">
+          <div class="cert-card__top flex items-center justify-between">
+            <span class="cert-card__number">03</span>
+            <span class="cert-card__status"><i></i>Verified</span>
+          </div>
+
+          <div class="cert-card__badge">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+
+          <div class="cert-card__body flex-1">
+            <span class="cert-card__issuer">Copado</span>
+            <h3>Copado AI</h3>
+            <p>Explore AI-powered testing and automation to improve Salesforce delivery and identify issues early.</p>
+            <div class="cert-card__tags mt-4 flex flex-wrap gap-2">
+              <span>AI</span><span>AI Testing</span><span>Automation</span>
+            </div>
+          </div>
+
+          <dl class="cert-card__meta mt-[22px] grid grid-cols-2 gap-4">
+            <div><dt>Issued</dt><dd>2026</dd></div>
+            <div><dt>Credential ID</dt><dd>075788</dd></div>
+          </dl>
+
+          <a href="#" class="cert-card__link" target="_blank" rel="noopener">View credential <span>↗</span></a>
+        </article>
+
+        <!-- EDIT: placeholder certificate -->
+        <article data-cat="be10x" class="cert-card flex flex-col p-[22px] sm:p-[25px]">
+          <div class="cert-card__top flex items-center justify-between">
+            <span class="cert-card__number">05</span>
+            <span class="cert-card__status"><i></i>Verified</span>
+          </div>
+          <div class="cert-card__badge">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="cert-card__body flex-1">
+            <span class="cert-card__issuer">be10X</span>
+            <h3>be10X AI Certification</h3>
+            <p>Add the exact certification name and details here. Covers practical AI tools and workflows from the be10X programme.</p>
+            <div class="cert-card__tags mt-4 flex flex-wrap gap-2">
+              <span>AI</span><span>Tools</span><span>Workflows</span>
+            </div>
+          </div>
+          <dl class="cert-card__meta mt-[22px] grid grid-cols-2 gap-4">
+            <div><dt>Issued</dt><dd>2026</dd></div>
+            <div><dt>Credential ID</dt><dd>XXXXXX</dd></div>
+          </dl>
+          <a href="#" class="cert-card__link" target="_blank" rel="noopener">View credential <span>↗</span></a>
+        </article>
+    </div>
+
+    <div class="mt-12 flex justify-center">
+      <a href="index.html#certifications" class="viewall-btn"><span>←</span> Back to portfolio</a>
+    </div>
+  </main>
+
+  <footer class="footer">2026 Amit Mathur. All rights reserved.</footer>
+
+  <script>
+    // filter
+    var chips = document.querySelectorAll('.filter-chip');
+    var cards = document.querySelectorAll('#grid > [data-cat]');
+    var count = document.getElementById('count');
+
+    function applyFilter(cat) {
+      var shown = 0;
+      cards.forEach(function (card) {
+        var match = cat === 'all' || card.dataset.cat.split(' ').indexOf(cat) !== -1;
+        card.classList.toggle('hidden', !match);
+        if (match) { shown++; }
+      });
+      chips.forEach(function (chip) { chip.classList.toggle('is-active', chip.dataset.filter === cat); });
+      count.textContent = shown + ' of ' + cards.length + ' shown';
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () { applyFilter(chip.dataset.filter); });
+    });
+    applyFilter('all');
+
+    // reveal on scroll
+    var items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { entry.target.classList.add('show'); observer.unobserve(entry.target); }
+        });
+      }, { threshold: 0.05 });
+      items.forEach(function (item) { observer.observe(item); });
+    } else {
+      items.forEach(function (item) { item.classList.add('show'); });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAGATI | Study Planner & Productivity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-shell">
+        <aside class="sidebar">
+            <a href="#" class="pragati-logo"><span>◉</span> PRAGATI</a>
+            <p class="side-label">YOUR WORKSPACE</p>
+            <nav><a class="active" href="#overview"><span>◉</span> Overview</a><a href="#tasks">
+                <span>▣</span> My tasks</a>
+                <a href="#week"><span>▦</span> Calendar</a>
+                    <a href="#goals"><span>◎</span> Goals & habits</a>
+            </nav>
+            <div class="side-bottom"><div class="mini-avatar">A</div>
+                <div>
+                            <strong>Amit Mathur</strong><small>Personal workspace</small>
+                </div>
+                <span class="dots">...</span>
+            </div>
+        </aside>
+        
+        <main class="dashboard" id="overview">
+
+            <header class="dash-top">
+                <p>Workspace <span>/</span> Overview</p>
+                <div class="top-actions">
+                    <div class="search">⌕ &nbsp; Search anything</div>
+                    <div class="user-avatar">A</div>
+                </div>
+            </header>
+           
+            <section class="welcome">
+                <div><p class="eyebrow">TUESDAY, OCTOBER 20</p>
+                    <h1>Good morning, Amit <span>✳</span></h1>
+                    <p>Here's your focus for today. Keep it simple.</p>
+                </div>
+                <a class="new-task" href="#tasks">＋ New task</a>
+
+            </section>
+           
+            <section class="metrics" aria-label="Weekly summary">
+            <article class="metric"><p>TASKS COMPLETED</p><strong>12 <small>/ 16</small></strong><span class="green">↑ 3 more than yesterday</span></article>
+            <article class="metric"><p>FOCUS TIME</p><strong>3h 20m</strong><span class="green">↑ 24 min this week</span></article>
+            <article class="metric"><p>CURRENT STREAK</p><strong>5 days</strong><span class="green">You're building a habit</span></article>
+            <article class="metric"><p>WEEKLY GOAL</p><strong>8 <small>/ 10 hrs</small></strong><span class="orange">2 hours to your target</span></article>
+            </section>
+
+            <section class="content-grid">
+                <div class="panel task-panel" id="tasks">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Today's priorities</h2>
+                            <p>Keep your momentum going.</p></div><a href="#tasks">•••</a></div><div class="date-label">TUESDAY · OCT 20</div>
+                <article class="task-row">
+                    <span class="check checked">✓</span>
+                    <div>
+                        <h3>Finish portfolio project cards</h3>
+                        <p>Frontend <span>·</span> 10:30 AM</p></div><span class="task-status done">Done</span></article>
+                <article class="task-row">
+                    <span class="check"></span>
+                    <div>
+                        <h3>Revise database joins</h3>
+                        <p>College <span>·</span> 12:00 PM</p></div><span class="task-status study">Study</span></article>
+                <article class="task-row">
+                    <span class="check"></span>
+                    <div>
+                        <h3>Complete Trailhead module</h3>
+                        <p>Salesforce <span>·</span> 3:00 PM</p></div><span class="task-status work">Learning</span></article>
+                <article class="task-row">
+                    <span class="check"></span>
+                    <div>
+                        <h3>Plan tomorrow's study block</h3>
+                        <p>Personal <span>·</span> 6:00 PM</p></div><span class="task-status personal">Personal</span></article>
+                        <a class="all-tasks" href="#goals">View all tasks ↗</a>
+                    </div>
+                
+                <div class="panel focus-panel" id="week">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Focus this week</h2>
+                            <p>Your time, used intentionally.</p>
+                        </div>
+                        <a href="#week">↗</a>
+                    </div>
+                    
+                    <div class="chart">
+                        <div class="bar-item">
+                            <div class="bar-track">
+                                <span style="height:52%"></span>
+                            </div>
+                            <small>M</small>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar-track">
+                                <span style="height:75%"></span>
+                            </div>
+                            <small>T</small>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar-track">
+                                <span style="height:61%"></span>
+                            </div>
+                            <small>W</small>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar-track today">
+                                <span style="height:90%"></span>
+                            </div>
+                            <small>T</small>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar-track">
+                                <span style="height:67%"></span>
+                            </div>
+                            <small>F</small>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar-track">
+                                <span style="height:34%"></span>
+                            </div>
+                            <small>S</small>
+                        </div>
+
+                        <div class="bar-item">
+                            <div class="bar-track">
+                                <span style="height:22%"></span>
+                            </div>
+                            <small>S</small>
+                        </div>
+                    </div>
+                    
+                    <div class="focus-total">
+                        <strong>8h 40m</strong>
+                        <span>+12% from last week</span>
+                    </div>
+                    
+                    <div class="goal-progress">
+                        <div><span style="width:86%"></span></div>
+                    </div>
+                    <p class="goal-caption">86% of your 10-hour weekly goal</p>
+                </div>
+            </section>
+
+            <section class="reminder" id="goals">
+                <div class="reminder-icon">✦</div>
+                <div>
+                    <p class="eyebrow">A GENTLE REMINDER</p>
+                    <h2>Progress beats perfect planning.</h2>
+                    <p>Choose the next small task and get started.</p>
+                </div>
+                <a href="#tasks">View weekly plan ↗</a>
+            </section>
+
+            <footer>
+                <span>© 2026 PRAGATI</span>
+                <span>Built for better focus, one day at a time.</span>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

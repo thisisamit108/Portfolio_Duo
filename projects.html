@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a0b2e">
+  <title>All Projects | Amit Mathur</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Preahvihear&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header class="header fixed left-0 top-0 z-50 w-full">
+    <div class="mx-auto flex h-[72px] w-[92%] max-w-[1210px] items-center justify-between md:h-[62px] md:px-5 lg:px-8 xl:px-[75px]">
+      <a href="index.html" aria-label="Home">
+        <img src="Images/About/PPT_L.png" class="logo h-[42px] w-[46px]" alt="">
+      </a>
+
+        <nav class="nav hidden gap-10 lg:flex" aria-label="Primary">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#education">Education</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#certifications">Certifications</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+      <a href="index.html#projects" class="page-back">← Back to portfolio</a>
+    </div>
+  </header>
+
+  <main class="mx-auto w-[92%] max-w-[1210px] pb-16 pt-[110px]">
+
+    <!-- top -->
+    <div class="skills-modern-head mb-6 flex flex-col items-start gap-4 pb-6 md:flex-row md:items-end md:justify-between md:gap-12">
+      <div>
+        <span class="skills-modern-kicker">ALL PROJECTS</span>
+        <h2 class="section-title m-0 p-0 text-left text-[44px] tracking-[-0.03em] md:text-[50px] xl:text-[68px]">All Projects</h2>
+      </div>
+      <p class="max-w-[500px] md:max-w-[370px]">Everything I have built so far, from front-end UI projects to Salesforce and MuleSoft practice work.</p>
+    </div>
+
+    <!-- filters -->
+    <div class="mb-6 flex flex-wrap items-center gap-2" id="filters">
+      <button type="button" class="filter-chip" data-filter="all">All</button>
+      <button type="button" class="filter-chip" data-filter="html">HTML</button>
+      <button type="button" class="filter-chip" data-filter="css">CSS</button>
+      <button type="button" class="filter-chip" data-filter="tailwind">Tailwind</button>
+      <button type="button" class="filter-chip" data-filter="bootstrap">Bootstrap</button>
+      <button type="button" class="filter-chip" data-filter="javascript">JavaScript</button>
+      <span class="page-count ml-auto" id="count"></span>
+    </div>
+
+    <!-- cards -->
+    <div class="reveal grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3" id="grid">
+       
+      <!-- Netflix UI -->
+      <article data-cat="html css tailwind" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden"><img src="Images/Projects/img2.png" alt="Netflix UI project image"></div>
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Featured Project</span>
+            <h3>Netflix UI</h3>
+            <p>A responsive Netflix-inspired interface built to practice modern frontend development, responsive layouts, and clean UI design.</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2"><span>HTML</span><span>CSS</span><span>Tailwind CSS</span></div>
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="NETFLEX/index.html" aria-label="Live">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Amazon UI -->
+        <article data-cat="html css tailwind bootstrap" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden"><img src="Projects/amazon.png" alt="Amazon UI project image"></div>
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Featured Project</span>
+            <h3>Amazon UI</h3>
+            <p>A frontend recreation of an e-commerce interface focused on responsive layouts, reusable UI sections, and practical frontend development.</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2"><span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>Bootstrap</span></div>
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="Projects/index.html" aria-label="Live">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Portfolio Website -->
+        <article data-cat="html css tailwind javascript" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden"><img src="file_p/porfolio_sem_1/portfolio.png" alt="Portfolio Website project image"></div>
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Personal Project</span>
+            <h3>Portfolio Website</h3>
+            <p>This portfolio: a responsive multi-section site with a hamburger menu, scroll reveal animations and a dark glass UI.</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2"><span>HTML</span><span>Tailwind CSS</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="file_p/porfolio_sem_1/index.html" aria-label="Live">↗</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <!-- WordPress portfolio -->
+        <article data-cat="html css tailwind javascript" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden">
+            <img src="file_p/WordPress/wordpress.png" alt="Portfolio Website project image">
+          </div>
+
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Personal Project</span>
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio built to showcase my projects, skills, education and achievements with a modern dark-glass UI.</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2">
+              <span>WordPress</span>
+              <span>Web Design</span>
+              <span>CSS</span>
+            </div>
+
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="https://isthisamit.blog/" target="_blank" rel="noopener noreferrer" aria-label="Live Website">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- podha -->
+        <article data-cat="html css tailwind javascript" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden">
+            <img src="Images/Projects/img4.png" alt="Portfolio Website project image">
+          </div>
+
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Personal Project</span>
+            <h3>Flower E-commerce</h3>
+            <p>A responsive Flower E-commerce built to showcase their products.</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2">
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+            </div>
+
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="file_p/Templat_U.I_SEM-ll/index.html" target="_blank" rel="noopener noreferrer" aria-label="Live Website">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dashboard -->
+        <article data-cat="html css tailwind javascript" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden">
+            <img src="Images/Projects/img3.png" alt="Dashboard project image">
+          </div>
+
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Personal Project</span>
+            <h3>Dashboard</h3>
+            <p>A responsive dashboard built for managing and visualizing data.</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="file_p/DashBoard/DASHBOARD_1.html" target="_blank" rel="noopener noreferrer" aria-label="Live Website">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SANCHAR -->
+        <article data-cat="html css javascript" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden"><img src="file_p/SANCHAR/SANCHAR.png" alt="SANCHAR project image"></div> 
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Practice Project</span>
+            <h3>SANCHAR</h3>
+            <p>Streaming landing page</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2"><span>HTML</span><span>CSS</span><span>Tailwind</span></div>
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="file_p/SANCHAR/index.html" aria-label="Live">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- MUSAFIR -->
+        <article data-cat="salesforce" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden"><img src="file_p/MUSAFIR/MUSAFIR.png" alt="MUSAFIR project image"></div>        
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Practice Project</span>
+            <h3>MUSAFIR</h3>
+            <p>A travel discovery and stay booking platform.</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2"><span>HTML</span><span>CSS</span><span>Tailwind</span></div>
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="file_p/MUSAFIR/index.html" aria-label="Live">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- NIVAAS -->
+        <article data-cat="mulesoft" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden"><img src="file_p/Nivaas/NIVAAS.png" alt="NIVAAS project image"></div>
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Practice Project</span>
+            <h3>NIVAAS</h3>
+            <p>contemporary furniture and lifestyle store</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2"><span>HTML</span><span>CSS</span><span>Tailwind</span></div>
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="file_p/Nivaas/index.html" aria-label="Live">↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRAGATI -->
+        <article data-cat="mulesoft" class="proj-card flex flex-col">
+          <div class="proj-card__thumb aspect-[16/10] overflow-hidden"><img src="file_p/Pragati/PRAGATI.png" alt="PRAGATI project image"></div>
+          <div class="flex flex-1 flex-col p-[22px]">
+            <span class="proj-card__label">Practice Project</span>
+            <h3>PRAGATI</h3>
+            <p>A study planner and productivity dashboard</p>
+            <div class="proj-card__tags mt-4 flex flex-wrap gap-2"><span>HTML</span><span>CSS</span><span>Tailwind</span></div>
+            <div class="links mt-auto flex gap-4 pt-5">
+              <a href="#" aria-label="Source">&lt;/&gt;</a>
+              <a href="file_p/Pragati/index.html" aria-label="Live">↗</a>
+            </div>
+          </div>
+        </article>
+    </div>
+
+    <div class="mt-12 flex justify-center">
+      <a href="index_p12.html#projects" class="viewall-btn"><span>←</span> Back to portfolio</a>
+    </div>
+  </main>
+
+  <footer class="footer">2026 Amit Mathur. All rights reserved.</footer>
+
+  <script>
+    // filter
+    var chips = document.querySelectorAll('.filter-chip');
+    var cards = document.querySelectorAll('#grid > [data-cat]');
+    var count = document.getElementById('count');
+
+    function applyFilter(cat) {
+      var shown = 0;
+      cards.forEach(function (card) {
+        var match = cat === 'all' || card.dataset.cat.split(' ').indexOf(cat) !== -1;
+        card.classList.toggle('hidden', !match);
+        if (match) { shown++; }
+      });
+      chips.forEach(function (chip) { chip.classList.toggle('is-active', chip.dataset.filter === cat); });
+      count.textContent = shown + ' of ' + cards.length + ' shown';
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () { applyFilter(chip.dataset.filter); });
+    });
+    applyFilter('all');
+
+    // reveal on scroll
+    var items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { entry.target.classList.add('show'); observer.unobserve(entry.target); }
+        });
+      }, { threshold: 0.05 });
+      items.forEach(function (item) { observer.observe(item); });
+    } else {
+      items.forEach(function (item) { item.classList.add('show'); });
+    }
+  </script>
+
+</body>
+</html>

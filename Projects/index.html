@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Amazon.in — Spend less. Smile more. Practice clone for front-end study.">
+	<meta name="theme-color" content="#131921">
+	<title>Amazon.com. Spend less. Smile more.</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+		integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+	<header>
+		<!-- ===== NAVBAR 1 : logo / deliver-to / search / account / cart ===== -->
+		<div class="nav1">
+
+			<a href="#" class="logo-block">
+				<span class="logo-word">amazon</span>
+				<span class="logo-tld">.in</span>
+			</a>
+
+			<div class="deliver-to">
+				<p class="deliver-to-label">Deliver to</p>
+				<div class="deliver-to-value">
+					<i class="fa-solid fa-location-dot"></i>
+					<span>India</span>
+				</div>
+			</div>
+
+			<form class="search-bar" action="#" role="search">
+				<label for="search-category" class="sr-only">Select search category</label>
+				<select class="search-category" name="deals" id="search-category">
+					<option value="all">All</option>
+					<option value="clothes">Clothes</option>
+					<option value="shoes">Shoes</option>
+					<option value="jeans">Jeans &amp; Pants</option>
+					<option value="shirts">Shirts</option>
+					<option value="kurtas">Kurtas</option>
+				</select>
+
+				<label for="search-input" class="sr-only">Search Amazon.in</label>
+				<input class="search-input" type="search" name="q" id="search-input" placeholder="Search Amazon.in" autocomplete="off">
+
+				<button class="search-btn" type="submit" aria-label="Search">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</form>
+
+			<div class="lang-select">
+				<img src="https://flagcdn.com/w20/in.png" alt="India" class="flag-icon" width="20" height="14" loading="lazy">
+				<label for="lang-picker" class="sr-only">Choose language</label>
+				<select id="lang-picker" aria-label="Language">
+					<option>EN</option>
+					<option>HI</option>
+					<option>ES</option>
+					<option>FR</option>
+					<option>AR</option>
+				</select>
+			</div>
+
+			<a href="#" class="nav1-block account-block">
+				<p class="nav1-line1">Hello, sign in</p>
+				<p class="nav1-line2">Account &amp; Lists <i class="fa-solid fa-chevron-down caret"></i></p>
+			</a>
+
+			<a href="#" class="nav1-block">
+				<p class="nav1-line1">Returns</p>
+				<p class="nav1-line2">&amp; Orders</p>
+			</a>
+
+			<a href="#" class="nav1-block cart-block">
+				<span class="cart-count">0</span>
+				<i class="fa-solid fa-cart-shopping cart-icon"></i>
+				<span class="nav1-line2 cart-label">Cart</span>
+			</a>
+
+		</div>
+
+		<!-- ===== NAVBAR 2 : category links ===== -->
+		<nav class="nav2">
+			<ul>
+				<li class="all-menu">
+					<i class="fa-solid fa-bars"></i>
+					<a href="#">All</a>
+				</li>
+				<li><a href="#">Today's Deals</a></li>
+				<li><a href="#">Customer Service</a></li>
+				<li><a href="#">Registry</a></li>
+				<li><a href="#">Gift Cards</a></li>
+				<li><a href="#">Sell</a></li>
+			</ul>
+		</nav>
+
+		<!-- ===== HERO BANNER ===== -->
+		<div class="intro">
+			<div class="intro-slide">
+				<h1>Great deals on everything you love</h1>
+				<p>Fashion &bull; Electronics &bull; Home &amp; Kitchen &bull; Books</p>
+				<a href="#deals" class="intro-cta">Shop now</a>
+			</div>
+			<div class="intro-dots">
+				<span class="dot active"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- ===== DEAL CARDS (overlap the banner, classic Amazon layout) ===== -->
+		<section class="deal-grid" id="deals" aria-label="Featured deals">
+
+			<article class="deal-card">
+				<h2>Refresh your space</h2>
+				<div class="deal-thumb thumb-1"><i class="fa-solid fa-couch"></i></div>
+				<div class="deal-meta">
+					<span class="stars" aria-label="4.3 out of 5 stars">★★★★<span class="star-half">★</span></span>
+					<span class="price">From <b>&#8377;799</b></span>
+				</div>
+				<a href="#" class="deal-link">Shop home &amp; kitchen <i class="fa-solid fa-angle-right"></i></a>
+			</article>
+
+			<article class="deal-card">
+				<h2>Fashion for the season</h2>
+				<div class="deal-thumb thumb-2"><i class="fa-solid fa-shirt"></i></div>
+				<div class="deal-meta">
+					<span class="stars" aria-label="4.1 out of 5 stars">★★★★<span class="star-half">★</span></span>
+					<span class="price">From <b>&#8377;499</b></span>
+				</div>
+				<a href="#" class="deal-link">Shop clothing <i class="fa-solid fa-angle-right"></i></a>
+			</article>
+
+			<article class="deal-card">
+				<h2>Level up your tech</h2>
+				<div class="deal-thumb thumb-3"><i class="fa-solid fa-headphones-simple"></i></div>
+				<div class="deal-meta">
+					<span class="stars" aria-label="4.5 out of 5 stars">★★★★<span class="star-half">★</span></span>
+					<span class="price">From <b>&#8377;1,299</b></span>
+				</div>
+				<a href="#" class="deal-link">Shop electronics <i class="fa-solid fa-angle-right"></i></a>
+			</article>
+
+			<article class="deal-card">
+				<h2>Step out in style</h2>
+				<div class="deal-thumb thumb-4"><i class="fa-solid fa-shoe-prints"></i></div>
+				<div class="deal-meta">
+					<span class="stars" aria-label="4.2 out of 5 stars">★★★★<span class="star-half">★</span></span>
+					<span class="price">From <b>&#8377;999</b></span>
+				</div>
+				<a href="#" class="deal-link">Shop footwear <i class="fa-solid fa-angle-right"></i></a>
+			</article>
+
+			<article class="deal-card">
+				<h2>Books for every mood</h2>
+				<div class="deal-thumb thumb-5"><i class="fa-solid fa-book"></i></div>
+				<div class="deal-meta">
+					<span class="stars" aria-label="4.6 out of 5 stars">★★★★<span class="star-half">★</span></span>
+					<span class="price">From <b>&#8377;149</b></span>
+				</div>
+				<a href="#" class="deal-link">Shop books <i class="fa-solid fa-angle-right"></i></a>
+			</article>
+
+			<article class="deal-card">
+				<h2>Top kurta picks</h2>
+				<div class="deal-thumb thumb-6"><i class="fa-solid fa-vest-patches"></i></div>
+				<div class="deal-meta">
+					<span class="stars" aria-label="4.4 out of 5 stars">★★★★<span class="star-half">★</span></span>
+					<span class="price">From <b>&#8377;599</b></span>
+				</div>
+				<a href="#" class="deal-link">Shop kurtas <i class="fa-solid fa-angle-right"></i></a>
+			</article>
+
+		</section>
+	</main>
+
+	<footer>
+		<button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</button>
+
+		<div class="footer-columns">
+			<div>
+				<h3>Get to Know Us</h3>
+				<a href="#">About Us</a>
+				<a href="#">Careers</a>
+				<a href="#">Press Releases</a>
+			</div>
+			<div>
+				<h3>Connect with Us</h3>
+				<a href="#">Facebook</a>
+				<a href="#">Twitter</a>
+				<a href="#">Instagram</a>
+			</div>
+			<div>
+				<h3>Make Money with Us</h3>
+				<a href="#">Sell on Amazon</a>
+				<a href="#">Become an Affiliate</a>
+				<a href="#">Advertise Your Products</a>
+			</div>
+			<div>
+				<h3>Let Us Help You</h3>
+				<a href="#">Your Account</a>
+				<a href="#">Returns Centre</a>
+				<a href="#">Help</a>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<span class="logo-word">amazon</span>
+			<span>&copy; 2024, made for practice — not affiliated with Amazon.com, Inc.</span>
+		</div>
+	</footer>
+
+</body>
+</html>
